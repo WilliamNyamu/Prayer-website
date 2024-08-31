@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header{
+  /* padding: 10px; */
+  box-shadow: 0px 4px 8px rgba(241, 240, 240, 0.2);
+  padding: 10px 20px;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #000000;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h2{
+  color: white;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 10px;
+}
+nav ul li{
+  margin: 10px;
+  text-align:center;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li a button{
+  background: linear-gradient(45deg, #ff6b6b, #f06595, #845ef7, #5c7cfa, #339af0, #22b8cf);
+  background-size: 400% 400%;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  animation: gradient-animation 5s ease infinite;
+}
+nav ul li a button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #f8f9fa;
+}
+nav ul li a button:active{
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.verse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 30px;
+  /* background-color: rgb(20, 20, 20);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 900px; */
+}
+
+.verse_image {
+  width: 600px;
+  height: max-content;
+}
+
+.verse_prayer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.prayer {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1.5px;
+  margin: 10px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.collosians{
+  font-size: 16px;
+  color: #f8f9fa;
+  font-weight: bold;
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .verse {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .verse_image {
+    max-width: 100%;
+  }
+
+  .prayer {
+    font-size: 18px;
+  }
+}
+.great_div {
+  background-color: #f8f9fa;
+  padding-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+}
+
+.great {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(33.333% - 20px); /* Make each card take up 1/3 of the row minus margin */
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a nicer look */
+}
+
+.great_header {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #001a61;
+  background-color: #f8f9fa;
+  margin-bottom: 0; /* Add space below the header */
+  padding: 16px 0; /* Add some padding for better spacing */
+  letter-spacing: 16px;
+  text-align: center;
+  width: 100%; /* Ensure the header spans the full width of the section */
+}
+
+
+.great_card {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content inside card */
+  max-width: 100%; /* Ensure cards don't overflow */
+}
+
+.docket_img {
+  border-radius: 24px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.docket_img:hover {
+  transform: scale(1.05); /* Slightly increase the size of the image on hover */
+  filter: brightness(1.2); /* Increase the brightness of the image on hover */
+}
+
+
+.location, .time_details {
+  display: flex;
+  align-items: center; /* Align the icon with the text */
+  font-size: 16px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: bold;
+  margin: 8px 0; /* Add some space above and below */
+  color: #001a61;
+}
+
+.location svg, .time_details svg {
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+.details {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 12px; /* Space between details and the following content */
+}
+
+.site_footer {
+  background-color: #001a61;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.location_info {
+  margin: 20px 0;
+}
+
+.location_info p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.footer_nav {
+  margin: 20px 0;
+}
+
+.footer_nav a {
+  color: #ffffff;
+  margin: 10px 0;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer_nav a:hover {
+  text-decoration: underline;
+}
+
+.social_media {
+  margin-top: 20px;
+}
+
+.social_media a {
+  margin: 0 10px;
+}
+
+.social_media svg {
+  width: 30px;
+  height: 30px;
+}
