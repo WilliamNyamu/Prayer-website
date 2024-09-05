@@ -135,6 +135,7 @@ nav ul li a button:active{
   background-color: #f8f9fa;
   padding-bottom: 24px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; /* Center the cards */
 }
