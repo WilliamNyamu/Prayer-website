@@ -9,6 +9,7 @@ function Ministry() {
                 details = {item.details}
                 location = {item.location}
                 time_details = {item.time_details}
+                openSpots = {item.openSpots}
             />
   
         );
